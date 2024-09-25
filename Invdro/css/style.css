@@ -1,0 +1,146 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2e8b57;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+header nav ul li a:hover {
+    background-color: #66cdaa;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background-color: #66cdaa;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #2e8b57;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.service-item i {
+    font-size: 3rem;
+    color: #2e8b57;
+}
+
+.service-item h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #2e8b57;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+/* Estilos para el footer estático */
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #333; /* Fondo oscuro */
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para los íconos de redes sociales */
+.fixed-footer .fab {
+    color: #fff; /* Color de los íconos */
+    transition: color 0.3s;
+}
+
+.fixed-footer .fab:hover {
+    color: #ff4757; /* Color al pasar el ratón sobre los íconos */
+}
+
+/* Margen en la parte inferior del contenido para evitar que se superponga con el footer */
+body {
+    padding-bottom: 70px; /* Ajusta según la altura del footer */
+}
